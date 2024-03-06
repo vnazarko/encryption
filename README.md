@@ -28,7 +28,8 @@
 
 ### Пример
 ```javascript
-const ASCII = {
+// путь/до/модуля
+export const ASCII = {
     encrypt: (text, shiftKey) => {
         let encryptedText = '';
         for (let i = 0; i < text.length; i++) {
@@ -49,7 +50,10 @@ const ASCII = {
     },
 }
 
-// Пример использования:
+// main.js
+
+import { ASCII } from 'путь/до/модуля'
+
 const plaintext = "Привет, Мир!";
 const shift = 3;
 const encryptedText = ASCII.encrypt(plaintext, shift);

@@ -1,4 +1,4 @@
-const ASCII = {
+export const ASCII = {
     encrypt: (text, shiftKey) => {
         let encryptedText = '';
         for (let i = 0; i < text.length; i++) {
